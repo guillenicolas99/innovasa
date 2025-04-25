@@ -26,7 +26,9 @@ import { ClientRouter } from "astro:transitions";
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 
 	<Header />
-    <slot />
+	<div class="min-h-[70vh] grid items-center">
+		<slot />
+	</div>
 	<Footer />
 
 	<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>

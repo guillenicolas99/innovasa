@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../data.json";
+const servicios = data.servicios;
+import ButtonGray from "../components/ButtonGray.astro";
+
+export async function getStaticPaths() {
+  return data.servicios.map((link) => ({
+    params: { id: link.slug },
+  }));
+}
+
+const { id } = Astro.params;
+const servicio = servicios.find((s) => s.slug === id);
+if (!servicio) {
+  throw new Error(`Servicio con ID ${id} no encontrado`);
+}
+---
+
+<Layout title={`Página con ID: ${id}`}>
+
+  <div class="px-5 mx-auto max-w-screen-xl py-5">
+    <main class="flex flex-col items-center justify-center gap-3">
+      <h1 class="text-2xl font-bold text-gray-900 text-center">
+        {servicio.name}
+      </h1>
+
+      <article class="max-w-sm bg-white rounded-lg shadow-sm p-10 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-lg text-center">
+        <img
+          class="rounded-t-lg mx-auto"
+          src={servicio.image}
+          alt=""
+          transition:name={servicio.slug.toLowerCase()}
+        />
+        <div class="content">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+            {servicio.title}
+          </h5>
+        </div>
+      </article>
+      <ButtonGray href="/"> Volver </ButtonGray>
+    </main>
+  </div>
+</Layout>

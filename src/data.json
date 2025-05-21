@@ -45,6 +45,200 @@
             "image": "https://img.icons8.com/ios/50/imac.png"
         }
     ],
+    "tableros_de_mando": [
+        {
+            "id": 1,
+            "slug": "financiero",
+            "title": "Finanzas",
+            "image": "/public/tableros-de-mando/finanzas.webp",
+            "objetivos": [
+                {
+                    "id": 1,
+                    "content": "Disminuir los costos asociados a la ineficiencia mediante la interoperabilidad de sistemas."
+                },
+                {
+                    "id": 2,
+                    "content": "Maximizar la rentabilidad de la inversión (ROI) al reducir el tiempo y los recursos dedicados a tareas manuales."
+                },
+                {
+                    "id": 3,
+                    "content": "Minimizar pérdidas financieras derivadas de fallas tecnológicas o ciberataques."
+                },
+                {
+                    "id": 4,
+                    "content": "Aprovechar las economías de escala mediante la centralización y optimización del almacenamiento de datos."
+                },
+                {
+                    "id": 5,
+                    "content": "Reducir costos asociados a la seguridad cibernética mediante la implementación de prácticas básicas y herramientas accesibles."
+                },
+                {
+                    "id": 6,
+                    "content": "Generar ahorros operativos al mejorar la eficiencia de procesos rutinarios y minimizar la intervención humana."
+                },
+                {
+                    "id": 7,
+                    "content": "Reducir en un 25% los costos operativos relacionados con la gestión de datos mediante la consolidación de sistemas y almacenamiento centralizado para finales de 2025."
+                },
+                {
+                    "id": 8,
+                    "content": "Disminuir en un 40% las pérdidas económicas por incidentes."
+                },
+                {
+                    "id": 9,
+                    "content": "Lograr un ahorro del 30% en gastos por seguros o contingencias TI al demostrar cumplimiento con controles mínimos de ciberseguridad."
+                },
+                {
+                    "id": 10,
+                    "content": "Reducir en un 35% los costos asociados a la tercerización de servicios TI mediante la formación y retención de talento interno especializado"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "clientes",
+            "title": "Cliente",
+            "image": "/public/tableros-de-mando/clientes.webp",
+            "objetivos": [
+                {
+                    "id": 1,
+                    "content": "Mejorar la experiencia del cliente mediante procesos más rápidos y automatizados."
+                },
+                {
+                    "id": 2,
+                    "content": "Generar confianza en la protección de sus datos gracias a sistemas de ciberseguridad básicos pero efectivos."
+                },
+                {
+                    "id": 3,
+                    "content": "Garantizar la entrega oportuna de productos al integrar mejor las áreas internas (ventas, logística, productos)."
+                },
+                {
+                    "id": 4,
+                    "content": "Ofrecer atención personalizada al optimizar el acceso a datos relevantes del cliente."
+                },
+                {
+                    "id": 5,
+                    "content": "Aumentar la satisfacción del cliente mediante una interfaz unificada y amigable del portal web."
+                },
+                {
+                    "id": 6,
+                    "content": "Reducir tiempos de espera en la atención a través de procesos más eficientes."
+                },
+                {
+                    "id": 7,
+                    "content": "Incrementar la fidelidad del cliente al ofrecer servicios más confiables y seguros."
+                },
+                {
+                    "id": 8,
+                    "content": "Mostrar responsabilidad social y ambiental, mejorando la percepción de la empresa."
+                },
+                {
+                    "id": 9,
+                    "content": "Evitar interrupciones en los servicios gracias a la gestión de riesgos tecnológicos."
+                },
+                {
+                    "id": 10,
+                    "content": "Atender mejor al cliente agrícola, mediante soluciones adaptadas a su entorno y necesidades."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "operacion-interna",
+            "title": "Procesos internos",
+            "image": "/public/tableros-de-mando/procesos-internos.webp",
+            "objetivos": [
+                {
+                    "id": 1,
+                    "content": "Estandarizar procesos mediante políticas de gobernanza de datos."
+                },
+                {
+                    "id": 2,
+                    "content": "Implementar controles internos de seguridad que prevengan accesos no autorizados."
+                },
+                {
+                    "id": 3,
+                    "content": "Mejorar la trazabilidad de la información, desde la generación hasta su uso final."
+                },
+                {
+                    "id": 4,
+                    "content": "Reducir errores manuales con procesos automatizados."
+                },
+                {
+                    "id": 5,
+                    "content": "Tener una gestión documentada de riesgos tecnológicos, con planes de mitigación."
+                },
+                {
+                    "id": 6,
+                    "content": "Adoptar tecnologías más limpias dentro de los procesos productivos y logísticos."
+                },
+                {
+                    "id": 7,
+                    "content": "Disponer de un sistema básico de monitoreo y respuesta ante incidentes digitales."
+                },
+                {
+                    "id": 8,
+                    "content": "Optimizar el uso de recursos tecnológicos, eliminando duplicidades y tiempos muertos."
+                },
+                {
+                    "id": 9,
+                    "content": "Facilitar el acceso a la información operativa en tiempo real para la toma de decisiones."
+                },
+                {
+                    "id": 10,
+                    "content": "Desarrollar un programa interno de formación continua y establecer al menos dos convenios con instituciones educativas en 2025."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "aprendizaje",
+            "title": "Aprendizaje y crecimiento",
+            "image": "/public/tableros-de-mando/aprendizaje-capacitacion.webp",
+            "objetivos": [
+                {
+                    "id": 1,
+                    "content": "Capacitar al personal en el uso del portal web y nuevas herramientas digitales."
+                },
+                {
+                    "id": 2,
+                    "content": "Fomentar una cultura de ciberseguridad con prácticas formativas continuas."
+                },
+                {
+                    "id": 3,
+                    "content": "Desarrollar competencias en análisis de riesgos tecnológicos."
+                },
+                {
+                    "id": 4,
+                    "content": "Impulsar la formación en automatización y digitalización de procesos."
+                },
+                {
+                    "id": 5,
+                    "content": "Capacitar en gobernanza de datos y buenas prácticas de calidad de la información."
+                },
+                {
+                    "id": 6,
+                    "content": "Sensibilizar sobre el uso de tecnologías sostenibles y sus beneficios."
+                },
+                {
+                    "id": 7,
+                    "content": "Formar equipos en gestión de almacenamiento y análisis de datos."
+                },
+                {
+                    "id": 8,
+                    "content": "Crear alianzas con instituciones educativas para suplir demanda de talento TI."
+                },
+                {
+                    "id": 9,
+                    "content": "Desarrollar capacidades en ciberseguridad aplicada al entorno agrícola."
+                },
+                {
+                    "id": 10,
+                    "content": "Promover el aprendizaje continuo en nuevas tecnologías emergentes aplicables al agro."
+                }
+            ]
+        }
+    ],
     "Finanzas": [
         {
             "id": 1,

@@ -1,6 +1,7 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+import { tableros_de_mando } from "../data.json";
 ---
 
 <Layout title="Tableros de mando">
@@ -9,26 +10,11 @@ import Layout from "../layouts/Layout.astro";
       Tableros de mando
     </h1>
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-      <Card
-        href="/tableros-de-mando/aprendizaje"
-        text="Objetivos de aprendizaje y capacitación"
-        image="/public/tableros-de-mando/aprendizaje-capacitacion.webp"
-      />
-      <Card
-        href="/tableros-de-mando/financiero"
-        text="Objetivos financieros"
-        image="/public/tableros-de-mando/finanzas.webp"
-      />
-      <Card
-        href="/tableros-de-mando/operacion-interna"
-        text="Objetivos de procesos internos del negocio"
-        image="/public/tableros-de-mando/procesos-internos.webp"
-      />
-      <Card
-        href="/tableros-de-mando/clientes"
-        text="Objetivos de clientes"
-        image="/public/tableros-de-mando/clientes.webp"
-      />
+      {
+        tableros_de_mando.map((item) => (
+          <Card href={`tableros-de-mando/${item.slug}`} text={item.title} image={item.image} />
+        ))
+      }
     </div>
   </div>
 </Layout>

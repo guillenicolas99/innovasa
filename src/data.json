@@ -50,7 +50,7 @@
             "id": 1,
             "slug": "financiero",
             "title": "Finanzas",
-            "image": "/public/tableros-de-mando/finanzas.webp",
+            "image": "/tableros-de-mando/finanzas.webp",
             "objetivos": [
                 {
                     "id": 1,
@@ -98,7 +98,7 @@
             "id": 2,
             "slug": "clientes",
             "title": "Cliente",
-            "image": "/public/tableros-de-mando/clientes.webp",
+            "image": "/tableros-de-mando/clientes.webp",
             "objetivos": [
                 {
                     "id": 1,
@@ -146,7 +146,7 @@
             "id": 3,
             "slug": "operacion-interna",
             "title": "Procesos internos",
-            "image": "/public/tableros-de-mando/procesos-internos.webp",
+            "image": "/tableros-de-mando/procesos-internos.webp",
             "objetivos": [
                 {
                     "id": 1,
@@ -194,7 +194,7 @@
             "id": 4,
             "slug": "aprendizaje",
             "title": "Aprendizaje y crecimiento",
-            "image": "/public/tableros-de-mando/aprendizaje-capacitacion.webp",
+            "image": "/tableros-de-mando/aprendizaje-capacitacion.webp",
             "objetivos": [
                 {
                     "id": 1,

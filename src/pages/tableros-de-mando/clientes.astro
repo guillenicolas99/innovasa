@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { Cliente } from "../../data.json";
 ---
 
 <Layout title="Aprendizaje">
@@ -113,6 +114,20 @@ import Layout from "../../layouts/Layout.astro";
     <div
       class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0"
     >
+    </div>
+  </section>
+
+  <section class="py-10">
+    <div class="max-w-screen-xl mx-auto py-5 px-3">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {
+          Cliente.map((item) => (
+            <article class="bg-white rounded-lg shadow-sm text-center p-5 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <p>{item.content}</p>
+            </article>
+          ))
+        }
+      </div>
     </div>
   </section>
 </Layout>

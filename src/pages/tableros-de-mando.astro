@@ -1,0 +1,34 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Tableros de mando">
+  <div class="px-5 mx-auto max-w-screen-xl py-5">
+    <h1 class="text-center text-4xl font-bold text-gray-900 mb-5">
+      Tableros de mando
+    </h1>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <Card
+        href="/tableros-de-mando/aprendizaje"
+        text="Objetivos de aprendizaje y capacitación"
+        image="/public/tableros-de-mando/aprendizaje-capacitacion.webp"
+      />
+      <Card
+        href="/tableros-de-mando/financiero"
+        text="Objetivos financieros"
+        image="/public/tableros-de-mando/finanzas.webp"
+      />
+      <Card
+        href="/tableros-de-mando/operacion-interna"
+        text="Objetivos de procesos internos del negocio"
+        image="/public/tableros-de-mando/procesos-internos.webp"
+      />
+      <Card
+        href="/tableros-de-mando/clientes"
+        text="Objetivos de clientes"
+        image="/public/tableros-de-mando/clientes.webp"
+      />
+    </div>
+  </div>
+</Layout>

@@ -12,7 +12,7 @@ import { tableros_de_mando } from "../data.json";
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
       {
         tableros_de_mando.map((item) => (
-          <Card href={`tableros-de-mando/${item.slug}`} text={item.title} image={item.image} />
+          <Card href={item.slug} text={item.title} image={item.image} />
         ))
       }
     </div>

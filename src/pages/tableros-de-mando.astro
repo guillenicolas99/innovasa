@@ -9,10 +9,14 @@ import { tableros_de_mando } from "../data.json";
     <h1 class="text-center text-4xl font-bold text-gray-900 mb-5">
       Tableros de mando
     </h1>
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {
         tableros_de_mando.map((item) => (
-          <Card href={item.slug} text={item.title} image={item.image} />
+          <Card
+            href={`/tableros-de-mando/${item.slug}`}
+            text={item.title}
+            image={item.image}
+          />
         ))
       }
     </div>

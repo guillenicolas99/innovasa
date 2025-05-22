@@ -237,6 +237,53 @@
                     "content": "Promover el aprendizaje continuo en nuevas tecnologías emergentes aplicables al agro."
                 }
             ]
+        },{
+            "id": 5,
+            "slug": "objetivos-estrategicos-ti",
+            "title": "Objetivos estratégicos de TI.",
+            "image": "/tableros-de-mando/objetivos-ti.webp",
+            "objetivos": [
+                {
+                    "id": 1,
+                    "content": "Mejorar la interoperabilidad entre las áreas de Productos, Ventas y Logística en Innova S.A., mediante un portal web centralizado que permita el acceso, registro y seguimiento de información clave de manera integrada y eficiente."
+                },
+                {
+                    "id": 2,
+                    "content": "Fortalecer la seguridad de la información en Innova S.A. mediante la implementación progresiva de prácticas básicas y herramientas accesibles de ciberseguridad, con un enfoque preventivo, formativo y de respuesta temprana ante incidentes."
+                },
+                {
+                    "id": 3,
+                    "content": "Implantar un sistema básico de identificación, evaluación y mitigación de riesgos tecnológicos para reducir vulnerabilidades operativas."
+                },
+                {
+                    "id": 4,
+                    "content": "Automatizar procesos rutinarios para aumentar la eficiencia operativa y reducir errores manuales."
+                },
+                {
+                    "id": 5,
+                    "content": "Establecer una política básica de gobernanza de datos para mejorar la calidad y consistencia de la información."
+                },
+                {
+                    "id": 6,
+                    "content": "Promover el uso de tecnologías responsables con el medio ambiente en la empresa Innova S.A."
+                },
+                {
+                    "id": 7,
+                    "content": "Optimizar el almacenamiento, acceso y uso de los datos en Innova S.A."
+                },
+                {
+                    "id": 8,
+                    "content": "Fortalecer las competencias tecnológicas del personal de Innova S.A."
+                },
+                {
+                    "id": 9,
+                    "content": "Establecer un sistema básico pero efectivo de ciberseguridad que proteja los activos digitales de la empresa agrícola Innova S.A."
+                },
+                {
+                    "id": 10,
+                    "content": "Fortalecer las capacidades internas y generar alianzas que permitan suplir la demanda de talento en TI adaptado a las necesidades agrícolas de Innova S.A."
+                }
+            ]
         }
     ],
     "Finanzas": [

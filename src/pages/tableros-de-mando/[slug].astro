@@ -1,12 +1,28 @@
 ---
+import ButtonGray from "../../components/ButtonGray.astro";
+import { tableros_de_mando } from "../../data.json";
 import Layout from "../../layouts/Layout.astro";
-import Card from "../../components/Card.astro";
-import { Finanzas } from "../../data.json";
+
+export async function getStaticPaths() {
+  return tableros_de_mando.map((item) => ({
+    params: { slug: item.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const tablero = tableros_de_mando.find((t) => t.slug === slug);
+if (!tablero) {
+  throw new Error(`Tablero de mando con slug ${slug} no encontrado`);
+}
+
+const mitad = Math.ceil(tablero.objetivos.length / 2);
+const izquierda = tablero.objetivos.slice(0, mitad);
+const derecha = tablero.objetivos.slice(mitad);
 ---
 
-<Layout title="Aprendizaje">
+<Layout title={tablero.title}>
   <section
-    class="bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
+    class="bg-white relative dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
   >
     <div
       class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative"
@@ -38,10 +54,10 @@ import { Finanzas } from "../../data.json";
       <h1
         class="mb-5 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
       >
-        Objetivos financieros
+        {tablero.title}
       </h1>
 
-      <nav class="flex justify-center" aria-label="Breadcrumb">
+      <nav class="flex justify-center flex-wrap" aria-label="Breadcrumb">
         <ol
           class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
         >
@@ -105,7 +121,7 @@ import { Finanzas } from "../../data.json";
               </svg>
               <span
                 class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
-                >Objetivos financieros</span
+                >{tablero.title}</span
               >
             </div>
           </li>
@@ -118,17 +134,46 @@ import { Finanzas } from "../../data.json";
     </div>
   </section>
 
-  <section class="py-10">
-    <div class="max-w-screen-xl mx-auto py-5 px-3">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {
-          Finanzas.map((item) => (
-            <article class="bg-white rounded-lg shadow-sm text-center p-5 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-              <p>{item.content}</p>
-            </article>
-          ))
-        }
+  <section>
+    <div class="mx-auto py-5 px-3">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+        <!-- Columna izquierda -->
+        <div class="flex flex-col gap-4">
+          {
+            izquierda.map((item) => (
+              <article class="bg-white rounded-lg shadow-sm text-center p-5 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <p>{item.content}</p>
+              </article>
+            ))
+          }
+        </div>
+
+        <!-- Imagen al centro -->
+        <div class="flex justify-center">
+          <img
+            src={tablero.image}
+            alt={tablero.title}
+            class="w-full max-w-md rounded h-[450px] object-cover shadow-lg"
+            loading="lazy"
+            transition:name={`/tableros-de-mando/${tablero.slug}`}
+          />
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="flex flex-col gap-4">
+          {
+            derecha.map((item) => (
+              <article class="bg-white rounded-lg shadow-sm text-center p-5 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <p>{item.content}</p>
+              </article>
+            ))
+          }
+        </div>
       </div>
     </div>
+  </section>
+
+  <section class="mx-auto py-5 px-3 text-center">
+    <ButtonGray href="/tableros-de-mando">Volver</ButtonGray>
   </section>
 </Layout>

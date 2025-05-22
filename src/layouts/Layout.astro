@@ -22,13 +22,13 @@ import { ClientRouter } from "astro:transitions";
 	<ClientRouter />
 
   </head>
-  <body>
+  <body class="min-h-screen flex flex-col justify-between">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 
 	<Header />
-	<div class="min-h-[70vh] grid">
+	<main class="grid">
 		<slot />
-	</div>
+	</main>
 	<Footer />
 
 	<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>

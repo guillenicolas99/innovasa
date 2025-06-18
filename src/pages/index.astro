@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "@data";
+console.log(data);
+const { servicios } = data;
+console.log("servicios", servicios);
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Inicio" description="Bienvenido a Astro">
+  <h1 class="text-4xl text-white">Bienvenido a Astro</h1>
+
+  <div class="px-5 mx-auto max-w-screen-xl py-5 text-center">
+    <h1 class="text-2xl font-bold text-gray-900 text-center mb-5">
+      Bienvenido a Innova SA
+    </h1>
+    <p class="text-gray-700">
+      Plan Estratégico de Tecnología de Información y Comunicación
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-8">
+      {
+        servicios.map((servicio) => (
+          <article class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center justify-between gap-3">
+            <img
+              src={servicio.image}
+              alt={servicio.title}
+              class="object-cover"
+            />
+            <h2 class="text-xl font-bold">{servicio.title}</h2>
+            <a
+              href={`/servicios/${servicio.slug}`}
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:hover:bg-gray-700 dark:focus:ring-blue-800"
+            >
+              Ir a {servicio.description}
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,39 @@
+---
+const { id, title } = Astro.props;
+---
+
+<dialog id={id} class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">{title}</h3>
+    <slot />
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn">Cerrar</button>
+      </form>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+<style is:global>
+  dialog {
+    padding: 0;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow:
+      0 0 #0000,
+      0 0 #0000,
+      0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-box {
+    padding: 1.5rem;
+    max-width: 80vw;
+  }
+</style>

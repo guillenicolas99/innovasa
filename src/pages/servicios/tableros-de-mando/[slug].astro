@@ -1,0 +1,272 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import data from "@data";
+
+export function getStaticPaths() {
+  const allTableros = data.servicios.find((servicio) => servicio.slug === "tableros-de-mando")?.tableros || [];
+
+  return allTableros.map((tablero) => {
+    return {
+      params: { slug: tablero.slug },
+      props: { tablero },
+    };
+  });
+}
+
+const { tablero } = Astro.props;
+
+if (!tablero) {
+  return new Response(null, {
+    status: 404,
+    statusText: "Not found",
+  });
+}
+---
+
+<Layout title={tablero.title} description="Tablero de mando">
+  <!-- Encabezado (se mantiene igual) -->
+  <section
+    class="bg-white relative dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]"
+  >
+    <div
+      class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative"
+    >
+      <a
+        href="#"
+        class="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"
+      >
+        <span
+          class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 me-3"
+          >Bienvenido</span
+        >
+        <span class="text-sm font-medium">a Innovasa</span>
+        <svg
+          class="w-2.5 h-2.5 ms-2 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 9 4-4-4-4"></path>
+        </svg>
+      </a>
+      <h1
+        class="mb-5 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+      >
+        {tablero?.title}
+      </h1>
+      <nav class="flex justify-center flex-wrap" aria-label="Breadcrumb">
+        <ol
+          class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+        >
+          <li class="inline-flex items-center">
+            <a
+              href="/"
+              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+            >
+              <svg
+                class="w-3 h-3 me-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+                ></path>
+              </svg>
+              Inicio
+            </a>
+          </li>
+          <li class="inline-flex items-center">
+            <a
+              href="/servicios/tableros-de-mando"
+              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+            >
+              <svg
+                class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"></path>
+              </svg>
+              Tablero de Mando
+            </a>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg
+                class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"></path>
+              </svg>
+              <span
+                class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+              >
+                {tablero?.title}
+              </span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div
+      class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0"
+    >
+    </div>
+  </section>
+
+  <!-- Sección de objetivos -->
+  <section class="mx-auto py-5 px-3 max-w-7xl">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      {tablero.objetivos.map((objetivo) => (
+        <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+          <div class="flex flex-col gap-3 h-full">
+            <p class="text-gray-800">
+              <strong>{objetivo.id}.</strong> {objetivo.content}
+            </p>
+            
+            <div class="mt-auto flex gap-2 flex-wrap">
+              <!-- Botón para estrategias -->
+              {objetivo.estrategias && (
+                <button
+                  onclick={`document.getElementById('modal-${objetivo.id}-estrategias').showModal()`}
+                  class="text-xs px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition hover:cursor-pointer"
+                >
+                  Estrategias
+                </button>
+              )}
+              
+              <!-- Botón para factores críticos -->
+              {objetivo.factores_criticos && (
+                <button
+                  onclick={`document.getElementById('modal-${objetivo.id}-factores').showModal()`}
+                  class="text-xs px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition hover:cursor-pointer"
+                >
+                  Factores
+                </button>
+              )}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- Modales dinámicos -->
+  {tablero.objetivos.map((objetivo) => (
+    <>
+      <!-- Modal para estrategias -->
+      {objetivo.estrategias && (
+        <dialog id={`modal-${objetivo.id}-estrategias`} class="modal">
+          <div class="modal-box max-w-4xl">
+            <h3 class="font-bold text-lg">{objetivo.title || `Estrategias - Objetivo ${objetivo.id}`}</h3>
+            <div class="py-4">
+              <h4 class="font-semibold mb-2">Estrategias:</h4>
+              <ul class="list-disc pl-5 space-y-1">
+                {typeof objetivo.estrategias === 'string' 
+                  ? objetivo.estrategias.split('.').filter(s => s.trim()).map((e, i) => (
+                      <li key={i}>{e.trim()}</li>
+                    ))
+                  : <li>{objetivo.estrategias}</li>
+                }
+              </ul>
+            </div>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="bg-red-700 text-white px-4 py-2 rounded-md">Cerrar</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      )}
+
+      <!-- Modal para factores críticos -->
+      {objetivo.factores_criticos && (
+        <dialog id={`modal-${objetivo.id}-factores`} class="modal">
+          <div class="modal-box max-w-4xl">
+            <h3 class="font-bold text-lg">{objetivo.title || `Factores Críticos - Objetivo ${objetivo.id}`}</h3>
+            <div class="py-4">
+              <h4 class="font-semibold mb-2">Factores Críticos:</h4>
+              <ul class="list-disc pl-5 space-y-1">
+                {typeof objetivo.factores_criticos === 'string' 
+                  ? objetivo.factores_criticos.split('.').filter(s => s.trim()).map((f, i) => (
+                      <li key={i}>{f.trim()}</li>
+                    ))
+                  : <li>{objetivo.factores_criticos}</li>
+                }
+              </ul>
+            </div>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="bg-red-700 text-white px-4 py-2 rounded-md hover:bg-red-800 hover:cursor-pointer transition-all">Cerrar</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      )}
+    </>
+  ))}
+
+  <!-- Botón de volver -->
+  <div class="text-center my-8">
+    <a
+      href="/servicios/tableros-de-mando"
+      class="inline-flex items-center px-5 py-3 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:bg-gray-700 dark:focus:ring-blue-800"
+    >
+      Volver a Tableros de Mando
+    </a>
+  </div>
+
+  <!-- Estilos para los modales -->
+  <style is:global>
+    dialog {
+      padding: 0;
+      border: none;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    
+    dialog::backdrop {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 90vw;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    
+    .modal-box {
+      padding: 1.5rem;
+      max-width: 80vw;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+  </style>
+</Layout>

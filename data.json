@@ -1,0 +1,371 @@
+{
+    "basics": {
+        "name": "Innova SA",
+        "logo": "./profile-photo.webp",
+        "summary": "Plan Estratégico de Tecnología de Información y Comunicación",
+        "location": {
+            "city": "Managua",
+            "countryCode": "Nic",
+            "region": "Nicaragua"
+        }
+    },
+    "servicios": [
+        {
+            "id": 1,
+            "slug": "retos",
+            "title": "Retos",
+            "name": "Retos de Innova SA",
+            "description": "Retos de Innova SA",
+            "image": "https://img.icons8.com/ios/50/handshake-heart.png"
+        },
+        {
+            "id": 2,
+            "slug": "estrategias",
+            "title": "Estrategias",
+            "name": "Estrategias de Innova SA",
+            "description": "Estrategias de Innova SA",
+            "image": "https://img.icons8.com/ios/50/goal--v1.png"
+        },
+        {
+            "id": 3,
+            "slug": "indicadores",
+            "title": "Indicadores",
+            "name": "Indicadores de Innova SA",
+            "description": "Indicadores de Innova SA",
+            "image": "https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/external-statistics-finance-dreamstale-lineal-dreamstale-4.png",
+            "indicadores": [
+                {
+                    "id": 1,
+                    "description": " Reducción de costos operativos por reprocesos o duplicidad de tareas. procesos integrados en el portal web."
+                },
+                {
+                    "id": 2,
+                    "description": "Índice de satisfacción del cliente (NPS). Tiempo promedio de atención"
+                },
+                {
+                    "id": 3,
+                    "description": "70% de procesos con estándares definidos. Nivel de consistencia en los datos compartidos."
+                },
+                {
+                    "id": 4,
+                    "description": "80 % de empleados capacitados en herramientas digitales clave."
+                },
+                {
+                    "id": 5,
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "tableros-de-mando",
+            "title": "Tableros de mando",
+            "name": "Tableros de mando de Innova SA",
+            "description": "Tableros de mando de Innova SA",
+            "image": "https://img.icons8.com/ios/50/imac.png",
+            "tableros": [
+                {
+                    "id": 1,
+                    "slug": "financiero",
+                    "title": "Finanzas",
+                    "image": "/tableros-de-mando/finanzas.webp",
+                    "objetivos": [
+                        {
+                            "id": 1,
+                            "content": "Disminuir los costos asociados a la ineficiencia mediante la interoperabilidad de sistemas."
+                        },
+                        {
+                            "id": 2,
+                            "content": "Maximizar la rentabilidad de la inversión (ROI) al reducir el tiempo y los recursos dedicados a tareas manuales."
+                        },
+                        {
+                            "id": 3,
+                            "content": "Minimizar pérdidas financieras derivadas de fallas tecnológicas o ciberataques."
+                        },
+                        {
+                            "id": 4,
+                            "content": "Aprovechar las economías de escala mediante la centralización y optimización del almacenamiento de datos."
+                        },
+                        {
+                            "id": 5,
+                            "content": "Reducir costos asociados a la seguridad cibernética mediante la implementación de prácticas básicas y herramientas accesibles."
+                        },
+                        {
+                            "id": 6,
+                            "content": "Generar ahorros operativos al mejorar la eficiencia de procesos rutinarios y minimizar la intervención humana."
+                        },
+                        {
+                            "id": 7,
+                            "content": "Reducir en un 25% los costos operativos relacionados con la gestión de datos mediante la consolidación de sistemas y almacenamiento centralizado para finales de 2025."
+                        },
+                        {
+                            "id": 8,
+                            "content": "Disminuir en un 40% las pérdidas económicas por incidentes."
+                        },
+                        {
+                            "id": 9,
+                            "content": "Lograr un ahorro del 30% en gastos por seguros o contingencias TI al demostrar cumplimiento con controles mínimos de ciberseguridad."
+                        },
+                        {
+                            "id": 10,
+                            "content": "Reducir en un 35% los costos asociados a la tercerización de servicios TI mediante la formación y retención de talento interno especializado"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "slug": "clientes",
+                    "title": "Cliente",
+                    "image": "/tableros-de-mando/clientes.webp",
+                    "objetivos": [
+                        {
+                            "id": 1,
+                            "content": "Mejorar la experiencia del cliente mediante procesos más rápidos y automatizados."
+                        },
+                        {
+                            "id": 2,
+                            "content": "Generar confianza en la protección de sus datos gracias a sistemas de ciberseguridad básicos pero efectivos."
+                        },
+                        {
+                            "id": 3,
+                            "content": "Garantizar la entrega oportuna de productos al integrar mejor las áreas internas (ventas, logística, productos)."
+                        },
+                        {
+                            "id": 4,
+                            "content": "Ofrecer atención personalizada al optimizar el acceso a datos relevantes del cliente."
+                        },
+                        {
+                            "id": 5,
+                            "content": "Aumentar la satisfacción del cliente mediante una interfaz unificada y amigable del portal web."
+                        },
+                        {
+                            "id": 6,
+                            "content": "Reducir tiempos de espera en la atención a través de procesos más eficientes."
+                        },
+                        {
+                            "id": 7,
+                            "content": "Incrementar la fidelidad del cliente al ofrecer servicios más confiables y seguros."
+                        },
+                        {
+                            "id": 8,
+                            "content": "Mostrar responsabilidad social y ambiental, mejorando la percepción de la empresa."
+                        },
+                        {
+                            "id": 9,
+                            "content": "Evitar interrupciones en los servicios gracias a la gestión de riesgos tecnológicos."
+                        },
+                        {
+                            "id": 10,
+                            "content": "Atender mejor al cliente agrícola, mediante soluciones adaptadas a su entorno y necesidades."
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "slug": "operacion-interna",
+                    "title": "Procesos internos",
+                    "image": "/tableros-de-mando/procesos-internos.webp",
+                    "objetivos": [
+                        {
+                            "id": 1,
+                            "content": "Estandarizar procesos mediante políticas de gobernanza de datos."
+                        },
+                        {
+                            "id": 2,
+                            "content": "Implementar controles internos de seguridad que prevengan accesos no autorizados."
+                        },
+                        {
+                            "id": 3,
+                            "content": "Mejorar la trazabilidad de la información, desde la generación hasta su uso final."
+                        },
+                        {
+                            "id": 4,
+                            "content": "Reducir errores manuales con procesos automatizados."
+                        },
+                        {
+                            "id": 5,
+                            "content": "Tener una gestión documentada de riesgos tecnológicos, con planes de mitigación."
+                        },
+                        {
+                            "id": 6,
+                            "content": "Adoptar tecnologías más limpias dentro de los procesos productivos y logísticos."
+                        },
+                        {
+                            "id": 7,
+                            "content": "Disponer de un sistema básico de monitoreo y respuesta ante incidentes digitales."
+                        },
+                        {
+                            "id": 8,
+                            "content": "Optimizar el uso de recursos tecnológicos, eliminando duplicidades y tiempos muertos."
+                        },
+                        {
+                            "id": 9,
+                            "content": "Facilitar el acceso a la información operativa en tiempo real para la toma de decisiones."
+                        },
+                        {
+                            "id": 10,
+                            "content": "Desarrollar un programa interno de formación continua y establecer al menos dos convenios con instituciones educativas en 2025."
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "slug": "aprendizaje",
+                    "title": "Aprendizaje y crecimiento",
+                    "image": "/tableros-de-mando/aprendizaje-capacitacion.webp",
+                    "objetivos": [
+                        {
+                            "id": 1,
+                            "content": "Capacitar al personal en el uso del portal web y nuevas herramientas digitales."
+                        },
+                        {
+                            "id": 2,
+                            "content": "Fomentar una cultura de ciberseguridad con prácticas formativas continuas."
+                        },
+                        {
+                            "id": 3,
+                            "content": "Desarrollar competencias en análisis de riesgos tecnológicos."
+                        },
+                        {
+                            "id": 4,
+                            "content": "Impulsar la formación en automatización y digitalización de procesos."
+                        },
+                        {
+                            "id": 5,
+                            "content": "Capacitar en gobernanza de datos y buenas prácticas de calidad de la información."
+                        },
+                        {
+                            "id": 6,
+                            "content": "Sensibilizar sobre el uso de tecnologías sostenibles y sus beneficios."
+                        },
+                        {
+                            "id": 7,
+                            "content": "Formar equipos en gestión de almacenamiento y análisis de datos."
+                        },
+                        {
+                            "id": 8,
+                            "content": "Crear alianzas con instituciones educativas para suplir demanda de talento TI."
+                        },
+                        {
+                            "id": 9,
+                            "content": "Desarrollar capacidades en ciberseguridad aplicada al entorno agrícola."
+                        },
+                        {
+                            "id": 10,
+                            "content": "Promover el aprendizaje continuo en nuevas tecnologías emergentes aplicables al agro."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Retos": {
+        "metas": [
+            {
+                "id": 1,
+                "content": "Lograr que al menos el 80% de los procesos entre las áreas de Productos, Ventas y Logística estén integrados en un portal web centralizado para finales de 2025."
+            },
+            {
+                "id": 2,
+                "content": "Disminuir los incidentes de seguridad informática a un máximo de 5 casos anuales mediante la implementación de controles básicos de ciberseguridad para diciembre de 2025."
+            },
+            {
+                "content": "Automatizar al menos el 60% de los procesos rutinarios clave de la empresa para reducir errores manuales y tiempos de ejecución para diciembre de 2025."
+            },
+            {
+                "content": "Alcanzar un 90% de calidad y consistencia en los datos operativos mediante la implementación de una política básica de gobernanza de datos antes del cierre del 2025."
+            },
+            {
+                "content": "Implementar tecnologías sostenibles en al menos el 50% de los procesos productivos y logísticos para promover una operación más responsable antes de finalizar 2025."
+            },
+            {
+                "content": "Reducir en un 80% el tiempo promedio de acceso, recuperación y uso de datos clave mediante sistemas centralizados y optimizados de almacenamiento para diciembre de 2025."
+            },
+            {
+                "content": "Elevar el nivel de competencias tecnológicas del personal de Innova S.A. al 80% mediante un programa de formación continua durante el año 2025."
+            },
+            {
+                "content": "Asegurar que al menos el 85% de los activos digitales estén cubiertos por mecanismos de protección básicos (antivirus, respaldos, control de accesos) para diciembre de 2025."
+            },
+            {
+                "content": "Firmar al menos dos convenios con instituciones educativas y poner en marcha programas de formación especializada en TI agrícola durante el año 2025."
+            }
+        ]
+    },
+    "estrategias": {
+        "id": 1,
+        "title": "Objetivos estratégicos de TI.",
+        "objetivos": [
+            {
+                "id": 1,
+                "title": "Planificación de un Sistema Integral",
+                "content": "Desarrollar un sistema de información para Innova S.A. que integre ventas, logística y recursos humanos, adaptado a las necesidades de los estudiantes en práctica.",
+                "estrategias": "Diseñar un portal con módulos para productos, ventas y logística.Crear una base de datos relacional que conecte áreas.Implementar acceso por roles.Realizar pruebas semanales.Usar tecnologías básicas (HTML, CSS, JS, PHP, MySQL).",
+                "factores_criticos": "Participación activa de estudiantes.Colaboración del personal de Innova SA. Información realista disponible.Diseño intuitivo y accesible.Accesibilidad multiplataforma."
+            },
+            {
+                "id": 2,
+                "title": "Seguridad y Concientización",
+                "content": "Implementar un sistema de gestión de seguridad de la información, fomentando la cultura organizacional mediante políticas y prácticas sostenibles.",
+                "estrategias": "Talleres internos de sensibilización. Canal de comunicación para incidentes.Crear equipo responsable de seguridad.Manual de buenas prácticas.Monitoreo periódico de medidas.",
+                "factores_criticos": "Compromiso de la dirección general y de los líderes de área en la aplicación de las políticas establecidas.Asignación mínima de recursos tecnológicos básicos, como acceso a internet seguro, herramientas de protección y almacenamiento adecuado.Disponibilidad y participación activa del personal en los procesos de capacitación y seguimiento.Apoyo externo o asesoría técnica, en caso de requerirse una revisión especializada.Evaluación continua de riesgos emergentes, y mejora constante de los controles aplicados."
+            },
+            {
+                "id": 3,
+                "title": "Gestión de Riesgos de TI",
+                "content": "Diseñar e implementar un plan de gestión de riesgos tecnológicos, priorizando amenazas y oportunidades que impactan el desempeño de la organización.",
+                "estrategias": "Matriz de riesgos con criterios simples.Asignación de responsables.Calendario semestral de revisión.Uso de Google Sheets.Bitácora electrónica de incidentes.",
+                "factores_criticos": "Participación activa del personal clave en la identificación de riesgos.Acceso a plantillas o formatos de evaluación ya existentes.Disponibilidad de tiempo para realizar sesiones de análisis.Prioridad de la dirección para atender los riesgos tecnológicos.Evaluación periódica de nuevas amenazas."
+            },
+            {
+                "id": 4,
+                "title": "Automatización de Procesos",
+                "content": "Optimizar procesos internos mediante soluciones de automatización con herramientas de bajo costo y código abierto.",
+                "estrategias": "Levantamiento de procesos.Scripts con Power Automate o Google Apps Script.Guías de uso.Documentar mejoras.Retroalimentación continua.",
+                "factores_criticos": "Disponibilidad de herramientas de automatización gratuitas o de bajo costo.Identificación clara de procesos clave para automatizar.Colaboración de los usuarios finales.Estabilidad del entorno digital utilizado.Seguimiento del rendimiento post-automatización."
+            },
+            {
+                "id": 5,
+                "title": "Calidad de la Información",
+                "content": "Implementar medidas de aseguramiento de la calidad de los datos en los registros y sistemas institucionales.",
+                "estrategias": "Manual digital con normas.Validaciones en formularios.Señales visuales para sensibilidad.Capacitaciones prácticas.Auditorías internas.",
+                "factores_criticos": "Claridad en los lineamientos de entrada de datos.Uso de plantillas o formatos prediseñados.Monitoreo de errores comunes en la gestión de datos.Aceptación de las nuevas políticas por parte de los usuarios.Coordinación entre las áreas que manejan información."
+            },
+            {
+                "id": 6,
+                "title": "TI Verde y Sustentabilidad",
+                "content": "Fomentar el uso eficiente de recursos tecnológicos, promoviendo prácticas amigables con el medio ambiente.",
+                "estrategias": "Auditoría energética.Recolección de electrónicos.Digitalización de procesos.Uso de iluminación LED.Boletines mensuales.",
+                "factores_criticos": "Apoyo de la dirección para adoptar prácticas sostenibles.Compromiso del equipo técnico.Acceso a herramientas digitales eficientes.Capacitación en sostenibilidad y TI verde.Seguimiento de indicadores ambientales."
+            },
+            {
+                "id": 7,
+                "title": "Gobernanza de Datos",
+                "content": "Desarrollar políticas claras para el uso, acceso y resguardo de los datos institucionales en entornos digitales.",
+                "estrategias": "Mapeo de procesos que usan datos.Software de gestión open-source.Roles y permisos según áreas.Talleres de alfabetización digital.Automatizar backups.",
+                "factores_criticos": "Infraestructura tecnológica adecuada.Política clara de manejo de datos.Personal comprometido con buenas prácticas.Disponibilidad de soporte técnico.Monitoreo constante de integridad de datos."
+            },
+            {
+                "id": 8,
+                "title": "Educación Digital Continua",
+                "content": "Impulsar la alfabetización digital continua del personal, estudiantes y usuarios institucionales mediante espacios formativos accesibles.",
+                "estrategias": "Convenios con plataformas educativas.Jornadas de formación.Intranet educativa.Biblioteca digital.Mentorías internas.",
+                "factores_criticos": "Tiempo dedicado por el personal para la formación.Diseño de contenidos adaptados al nivel del usuario.Apoyo del área de recursos humanos y TI.Motivación para aplicar lo aprendido en el trabajo.Seguimiento del progreso y resultados obtenidos."
+            },
+            {
+                "id": 9,
+                "title": "Protección de la Infraestructura Digital",
+                "content": "Asegurar la continuidad operativa de los servicios digitales mediante controles técnicos y organizacionales.",
+                "estrategias": "Capacitación en prácticas de seguridad.Manual interno de ciberseguridad.Software gratuito o de bajo costo.Encargado de monitoreo.Simulacros de incidentes.",
+                "factores_criticos": "Compromiso de la dirección para aplicar controles de seguridad.Concientización del personal sobre los riesgos digitales.Disponibilidad de herramientas tecnológicas accesibles.Actualización constante de sistemas y contraseñas.Apoyo técnico para resolución rápida de incidentes."
+            },
+            {
+                "id": 10,
+                "title": "Transformación Digital Rural",
+                "content": "Promover el desarrollo de capacidades tecnológicas en comunidades rurales mediante estrategias educativas y de inclusión digital.",
+                "estrategias": "Talleres sobre tecnología agrícola.Becas para estudios técnicos.Sistemas intuitivos.Charlas con expertos del agro.Identificación y formación de talentos internos.",
+                "factores_criticos": "Apoyo institucional para invertir en formación de talento.Alianzas efectivas con instituciones educativas.Disposición del personal a capacitarse.Acceso a contenidos y herramientas adaptadas al entorno rural.Monitoreo del progreso y rotación del personal formado."
+            }
+        ]
+    }
+}

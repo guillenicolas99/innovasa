@@ -129,6 +129,8 @@ const tableros = allTableros.filter(
                 src={tablero.image}
                 alt={tablero.title}
                 class="rounded-t-lg text-center mx-auto"
+                loading="lazy"
+                transition:name={`tablero-${tablero.slug}`}
               />
             </div>
             <div class="p-3">

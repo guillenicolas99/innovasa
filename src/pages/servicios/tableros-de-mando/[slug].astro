@@ -179,7 +179,8 @@ if (!tablero) {
             src={tablero.image}
             alt={tablero.title}
             class="rounded-lg shadow-lg mx-auto max-h-[400px] object-contain"
-            
+            loading="lazy"
+            transition:name={`tablero-${tablero.slug}`}
           />
         </div>
       </div>

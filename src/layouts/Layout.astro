@@ -4,7 +4,7 @@ import Header from "@/components/Header.astro";
 import "../style/styles.css";
 import data from "@data";
 import bg from "@public/background.BPKAcmfN.svg";
-import { ClientRouter } from "astro:transitions";
+// import { ClientRouter } from "astro:transitions";
 
 
 interface Props {
@@ -27,7 +27,7 @@ const { title, description } = Astro.props;
     <!-- En tu layout principal o head -->
     <script src="https://cdn.jsdelivr.net/npm/dialog-polyfill@0.5.6/dist/dialog-polyfill.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dialog-polyfill@0.5.6/dialog-polyfill.css" />
-    <ClientRouter />
+    <!-- <ClientRouter /> -->
   </head>
   <body>
     <img src={bg.src} id="bg" alt="" />

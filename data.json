@@ -36,23 +36,43 @@
             "indicadores": [
                 {
                     "id": 1,
-                    "description": " Reducción de costos operativos por reprocesos o duplicidad de tareas. procesos integrados en el portal web."
+                    "description": " Reducción de costos operativos por reprocesos o duplicidad de tareas. Procesos integrados en el portal web."
                 },
                 {
                     "id": 2,
-                    "description": "Índice de satisfacción del cliente (NPS). Tiempo promedio de atención"
+                    "description": "Procesos manuales automatizados. ROI del proyecto de automatización."
                 },
                 {
                     "id": 3,
-                    "description": "70% de procesos con estándares definidos. Nivel de consistencia en los datos compartidos."
+                    "description": "Incidentes de seguridad detectados y mitigados. Activos protegidos por controles básicos."
                 },
                 {
                     "id": 4,
-                    "description": "80 % de empleados capacitados en herramientas digitales clave."
+                    "description": "Consolidación de bases de datos. Ahorro en costos de almacenamiento."
                 },
                 {
                     "id": 5,
-                    "description": ""
+                    "description": "Costo anual en seguridad TI antes y después de implementación. Cumplimiento de controles mínimos."
+                },
+                {
+                    "id": 6,
+                    "description": "Reducción en horas-hombre por proceso. Costo promedio por proceso automatizado."
+                },
+                {
+                    "id": 7,
+                    "description": "Reducción de costos de gestión de datos. Tiempo promedio de acceso a la información."
+                },
+                {
+                    "id": 8,
+                    "description": "60% de reducción en impacto económico de incidentes. Tiempo promedio de respuesta ante incidentes."
+                },
+                {
+                    "id": 9,
+                    "description": "50% de controles mínimos implementados."
+                },
+                {
+                    "id": 10,
+                    "description": "75% de reducción en contratación externa TI. Índice de retención de talento TI."
                 }
             ]
         },
@@ -262,12 +282,13 @@
     "Retos": {
         "metas": [
             {
-                "id": 1,
                 "content": "Lograr que al menos el 80% de los procesos entre las áreas de Productos, Ventas y Logística estén integrados en un portal web centralizado para finales de 2025."
             },
             {
-                "id": 2,
                 "content": "Disminuir los incidentes de seguridad informática a un máximo de 5 casos anuales mediante la implementación de controles básicos de ciberseguridad para diciembre de 2025."
+            },
+            {
+                "content": " Identificar, evaluar y mitigar al menos el 75% de los riesgos tecnológicos operativos detectados en la empresa antes de finalizar el año 2025."
             },
             {
                 "content": "Automatizar al menos el 60% de los procesos rutinarios clave de la empresa para reducir errores manuales y tiempos de ejecución para diciembre de 2025."
